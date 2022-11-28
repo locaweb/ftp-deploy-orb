@@ -20,7 +20,7 @@ workflows:
       - shellcheck/check:
           filters: *filters
       - orb-tools/publish:
-          orb-name: allanalves23-default/ftp-sync-testing
+          orb-name: locaweb/ftp-deploy
           vcs-type: << pipeline.project.type >>
           requires:
             [orb-tools/lint, orb-tools/review, orb-tools/pack, shellcheck/check]

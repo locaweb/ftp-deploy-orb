@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  ftp-sync-testing: allanalves23-default/ftp-sync-testing@dev:<<pipeline.git.revision>>
+  ftp-sync-testing: locaweb/ftp-deploy@dev:<<pipeline.git.revision>>
   orb-tools: circleci/orb-tools@11.1
 
 filters: &filters
@@ -30,7 +30,7 @@ workflows:
       - orb-tools/pack:
           filters: *filters
       - orb-tools/publish:
-          orb-name: allanalves23-default/ftp-sync-testing
+          orb-name: locaweb/ftp-deploy
           vcs-type: << pipeline.project.type >>
           pub-type: production
           requires:
