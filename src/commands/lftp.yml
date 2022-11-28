@@ -1,5 +1,5 @@
 description: >
-  This command upload specific folder to ftp host destination
+  Realiza a publicação via FTP
 # What will this command do?
 # Descriptions should be short, simple, and clear.
 parameters:
